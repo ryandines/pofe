@@ -30,6 +30,8 @@ func GetQueryCmd(queryRoute string, cdc *codec.Codec) *cobra.Command {
 	pofeQueryCmd.AddCommand(
 		flags.GetCommands(
       // this line is used by starport scaffolding # 1
+			GetCmdListClaim(queryRoute, cdc),
+			GetCmdGetClaim(queryRoute, cdc),
 		)...,
 	)
 

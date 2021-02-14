@@ -13,3 +13,9 @@ const (
 	// QuerierRoute to be used for querier msgs
 	QuerierRoute = ModuleName
 )
+
+const (
+	ClaimPrefix = "claim-value-"
+	ClaimCountPrefix = "claim-count-"
+)
+		

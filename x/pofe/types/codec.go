@@ -7,6 +7,9 @@ import (
 // RegisterCodec registers concrete types on codec
 func RegisterCodec(cdc *codec.Codec) {
   // this line is used by starport scaffolding # 1
+		cdc.RegisterConcrete(MsgCreateClaim{}, "pofe/CreateClaim", nil)
+		cdc.RegisterConcrete(MsgSetClaim{}, "pofe/SetClaim", nil)
+		cdc.RegisterConcrete(MsgDeleteClaim{}, "pofe/DeleteClaim", nil)
 }
 
 // ModuleCdc defines the module codec
