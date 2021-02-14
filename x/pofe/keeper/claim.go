@@ -61,7 +61,7 @@ func (k Keeper) GetClaim(ctx sdk.Context, key string) (types.Claim, error) {
 
 // SetClaim sets a claim
 func (k Keeper) SetClaim(ctx sdk.Context, claim types.Claim) {
-	claimKey := claim.ID
+	claimKey := claim.Proof
 	store := ctx.KVStore(k.storeKey)
 	bz := k.cdc.MustMarshalBinaryLengthPrefixed(claim)
 	key := []byte(types.ClaimPrefix + claimKey)

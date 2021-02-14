@@ -4,8 +4,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 
+// Claim is gay
 type Claim struct {
 	Creator sdk.AccAddress `json:"creator" yaml:"creator"`
-	ID      string         `json:"id" yaml:"id"`
-    Proof string `json:"proof" yaml:"proof"`
+	Proof   string         `json:"proof" yaml:"proof"`
 }
