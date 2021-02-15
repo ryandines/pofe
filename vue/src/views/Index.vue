@@ -12,8 +12,9 @@
 
 <script>
 import * as sp from "@tendermint/vue";
+import DropZone from "@/components/DropZone";
 
 export default {
-  components: { ...sp },
+  components: { ...sp, DropZone },
 };
 </script>
